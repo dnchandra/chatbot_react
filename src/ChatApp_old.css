@@ -1,0 +1,182 @@
+
+/* General styles for the chat app container */
+.header {
+  background-color: #e4dbdf;
+  color: #141414;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  overflow: auto;
+}
+
+/* Styling for the chat messages */
+.chat-messages {
+  overflow-y: auto;
+  max-height: 700px;
+  padding: 10px;
+}
+
+/* Styles for user and bot messages */
+.user-message,
+.bot-message {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Avatar styling */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Styling for user messages */
+.user-message {
+  background-color: #5d9dca;
+  color: #0a0a0a;
+  padding: 15px;
+  border-radius: 20px;
+  align-self: flex-end;
+}
+
+/* Styling for bot messages */
+.bot-message {
+  background-color: #f9fcfd;
+  color: #050505;
+  padding: 15px;
+  border-radius: 20px;
+  
+}
+
+/* Message content styling 
+.message-content {
+  flex: 1;
+} */
+
+/* Styling for message sender (user or bot) */
+.message-sender {
+  font-weight: bold;
+}
+
+/* Styling for the chat input area */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Input styling */
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* ChatApp.css */
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap to the next line when there are many */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin: 20px;
+}
+
+/* Modify the styles for the "Send" button */
+.chat-input button {
+  background-color: #7d6d86; /* Change the background color */
+  color: #fff; /* Change the text color */
+  font-weight: bold;
+  padding: 5px 20px;
+  border: 1;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  /* Add any other styles you'd like to customize */
+}
+
+/* "Send" button hover effect */
+.chat-input button:hover {
+  background-color: #45a049; /* Change the hover background color */
+}
+
+
+.button-link {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Existing styles for button-container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap to the next line when there are many */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Additional styles for the dropdown */
+.dropdown {
+  margin: 20px;
+}
+
+/* Style for the select element */
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Modify the styles for the "Send" button */
+.chat-input button {
+  background-color: #7d6d86;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: 1;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* "Send" button hover effect */
+.chat-input button:hover {
+  background-color: #45a049;
+}
+
+/* Rest of your existing styles for buttons and links */
