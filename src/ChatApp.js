@@ -12,7 +12,7 @@ const ChatApp = () => {
       return;
     }
 
-    const userMessage = { text: text, user: 'user', name: 'User' };
+    const userMessage = { text: text, user: 'user', name: 'You:' };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
 
     try {
@@ -99,10 +99,10 @@ const ChatApp = () => {
       <div className="chat-container">
         <div className="chat-messages">
           {messages.map((msg, index) => (
-            <div key={index} className={msg.user === 'bot' ? 'bot-message' : 'user-message'}>
+            <div key={index} className={msg.user === 'bot' ? 'bot-message': 'user-message'}>
               {msg.user === 'bot' && <img className="avatar" src={botAvatar} alt="Bot Avatar" />}
               <div className="message-content">
-                <span className="message-sender">{msg.name}: </span>
+                <span className="message-sender">{msg.name} </span>
                 {msg.text}
                 {msg.buttons && renderButtons(msg.buttons)}
                 {msg.custom && renderCustomMessages(msg.custom)}
